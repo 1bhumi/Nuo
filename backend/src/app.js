@@ -21,9 +21,11 @@ app.use(cookieParser())
 import userRouter from "./routes/user.route.js"
 import categoryRouter from "./routes/category.route.js"
 import documentRouter from "./routes/document.route.js"
+import aiRouter from "./routes/ai.route.js"
 
 app.use("/api/v1/user", userRouter)
 app.use("/api/v1/category", categoryRouter)
 app.use("/api/v1/document", documentRouter)
+app.use("/api/v1/ai", aiRouter)
 
 export default app
